@@ -8,6 +8,8 @@ GitHub commands:
 3. git clone https://github.com/adyfbd/PythonPractice.git "To fetch the repository from github"
 4. git status to track the files
 5. git add ''filename'' and then again git status to check status or use "add ." to add all files
-6. git commit ("commit and lock the changes")
+6. git commit -m ("commit and lock the changes")
 6. git push "to push files to repository"
 7. git pull ""to pull the changes""
+
+Done
