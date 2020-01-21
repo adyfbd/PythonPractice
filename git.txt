@@ -13,3 +13,11 @@ GitHub commands:
 7. git pull ""to pull the changes""
 
 Done
+
+Create branch:
+
+1. git branch
+2. git branch "branch name"
+3. git checkout "branch name" (To switch to the branch)
+
+4. switch to branch then , use git merge master ""merge whatever was in branch into master branch""
