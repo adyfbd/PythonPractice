@@ -1,0 +1,400 @@
+#Good code
+readability
+comment, names variables good, predictability, dont repeat your code, make code reusable
+##Data Types
+#Fundamental Data types
+
+int
+float
+bool
+str
+
+#list (data structure)
+
+(list are mutable in python)
+Ordered collection of different data types
+list1=['book','laptop','cars','toys']
+list1[0]='books'
+print(list1[0:2])
+>>books,laptop
+
+list1=['book','laptop','cars','toys']
+list1[0]='books'
+print(list1[0:2])
+print(list1)
+#OR
+
+list1 = ['book','laptop','cars','toys']
+list1[0] = 'books'
+
+new_list = list1[:]#copying a list using : slicing  #with slicing we can create a totally  new copy of list and if we do
+#new_list=list1 then entire list1 will be modified
+new_list[1]='bikes'
+print(new_list)
+print(list1)
+
+#matrix array
+
+matrix = [
+[1,2,3],
+[2,4,6],
+[7,8,9]
+]
+print(matrix[0][1])
+>> 2
+
+basket=[1,2,3,4,5]
+#adding
+basket.append(100)
+new_list = basket
+print(basket)
+print(new_list)
+
+#Inserting
+
+basket=[1,2,3,4,5]
+#Insert
+basket.insert(index,value to insert)
+new_list = basket
+print(basket)
+print(new_list)
+
+#Extending
+
+basket=[1,2,3,4,5]
+#Extend
+basket.extend([val1,val2,....])
+new_list = basket
+print(basket)
+print(new_list)
+#removing
+basket.pop() #pops whatever is in end of the list
+basket.pop(index number) ##it return the value you remove
+basket.remove(value you want to remove)  # doesnt return the value you remove
+basket.clear()  #removes everything in the list
+
+#KNOW INDEX
+
+print(basket.index(value, start index(optional), end index(optional))) #gives value at the index number
+
+#KEYWORD in
+print('x' in basket) # returns True or False
+print('i' in 'My name is Aditya')
+
+print (basket.count('value')) ## counts how many times a word occur in list
+
+#SORTING
+basket=[1,5,4,3,2]
+basket.sort() # we cant use print(basket.sort()) as print won't return anything and it would just modify list
+print(basket)
+
+OR
+
+print(sorted(basket)) # Creates a new copy of basket and sort it basket remains unmodified
+
+OR
+new_basket=basket.copy() # just make a copy of list basket
+new_basket.sort()
+print(new_basket)
+print(basket)
+
+#REVERSE
+basket.sort()
+basket.reverse()
+print(basket)
+
+OR
+basket.sort()
+basket.reverse()
+print(basket[::-1])
+
+#RANGE
+print(list(range(100)))
+
+#JOIN
+new_sentence = ' '.join(['hi','hello','why']) # join first thing with every str in list
+print(new_sentence)
+
+#LIST UNPACKING
+
+a,b,c,*other,d =[1,2,3,4,5,6,7,8,9]
+
+print(a) #1
+print(b) #2
+print(c) #3
+print(other) #4,5,6,7,8
+print(d)     #9
+
+#NONE
+
+weapons = None
+
+#Tuple - immutable lists (faster than lists)
+
+if u dont wanna change something  like values like in  lists , so its faster to use tuples
+
+my_tuple=(1,2,3,4,5)
+
+
+#Set -- unordered collection of UNIQUE items
+
+set={1,2,3,4,5}
+
+>>Set from a list
+
+my_list=[1,2,3,4,5,5]
+
+print(set(list(my_list))
+>>1,2,3,4,5  # NO duplicates in sets
+
+#SET objects doesnt support indexing
+so use,
+my_set={1,2,3,4,5}
+print(1 in my_set)
+
+#dict  -- data type in python and also a  data structure
+An unordered key value pair
+dictionary={
+'key1':value1,
+'key2':value2
+}
+print(dictionary['key1'])
+better use  >> print(dictionary.get('value', (assign any default value))
+
+#use dictionary when ordered collecion is not required ex:weapons, players ,age  dict has no order
+
+A key in dict has to be unique or it will overwrite
+
+print('key1' in dictionary)
+OR
+print('key1' in dictionary.key())
+OR
+print('value1' in dictionary.values())
+
+OR
+print(dictionary.items()) # Grab entire dictionary
+
+OR
+
+dictionary.clear() #empty dictionary
+dictionary.pop('key1') #
+dictionary.update({'key1:100'})
+
+
+
+>>True
+
+OR
+user = dict(name='JohnJohn')
+print(user)
+
+
+#Variables (snake_case, start with lowercase or underscore,can contain underscore, letters,numbers,case sensitive)
+>> contains no keywords (ex:print)
+iq = 190 -- iq is variable
+
+#constants (capital letters)
+PI=3.14
+
+Dunder variables (2 underscors __)
+
+expressions vs statements:
+iq=100 -- statement
+user_age=iq/5 -- expression is iq/5, and  user_age=iq/5 is a statement
+
+#augmented assignment operator( +=, -=, *=)
+some_value=5
+some_value=some_value+2
+print(some_value)
+
+OR
+some_value=5
+some_value+=2
+print(some_value)
+
+#Comments
+name='aditya' #assign name variable a value of aditya as string
+
+add comments when necessary
+
+
+
+#operator precedence
+(),**, /,*,+,-
+
+#Classes -> Custom types
+
+#Specialized data Types
+Modules
+
+#None
+
+if, else, elif
+
+Truthy vs falsy in python
+
+print (bool(0)) #False
+
+#Ternary operator
+is_friend= True
+can_message= "message allowed" if
+is_friend else "not allowed to message"
+
+#short circuiting
+is_Friend=True
+is_User=True
+
+if is_Friend or/(and) is_User:
+print("Best friends")   # if one is true OR is efficient
+
+#logical operators
+
+print(not(False))
+>>True
+
+'is' keyword in python
+
+a=[1,2]
+b=[1,2]
+
+a is b #false because a & b are stored at different locations but a==b is True as its a value check
+10 is 10 #True
+'a' is 'a' #True
+
+#Loops
+
+for var in (1,2,3,4,5)
+    print(var)
+
+#Nested
+for var in (1,2,3,4,5)
+    print(var)
+    for x in ['a','b']
+        print(var,x)
+
+
+#Iterable
+List, String, Set, tuple, dictionary
+#iterate
+one by one check each item in the collection
+
+user = {
+'name':'Aditya'
+'age':27
+'can_swim' : False
+}
+
+for key,value in user.items():
+    print(key,value)
+
+for item in user.values():
+    print(item)
+
+for item in user.keys():
+    print(item)
+
+#Range
+for hi in range(0,10,2)
+print(hi)
+
+>>>0,2,4,8
+
+for x in range(2):
+    print(list(range(5)))
+
+ #Enumerate is used to fetch index number
+
+ for i,char in enumerate('Hello'):
+    print(i,char)
+
+#while
+
+i=0
+
+while(x<50)
+print(x)
+
+i+=1
+
+#when u r not sure how many things u gonna do, use while loop, other wise for loop
+
+
+pass,continue, break
+
+#pass - is used when there is a line of code that does nothing and you need to skip and jump to next line
+
+#continue - just goes  the top of the loop when there is continue in any loop
+
+For horizontal print in python use print('some text here',end='') #comma and end
+
+and empty string is default a new line in python
+#print('')
+
+#Functions
+def say_hello():
+    print('hello')
+
+say_hello()
+
+#parameters and arguments
+Parameters are used when when we define a function and arguments are actual value we pass/provide into the functions
+during calling a function
+
+#Parameters and default parameters
+def name_please(name='Aditya', emoji=':)')
+    print(f'Your name is {name}{emoji}')
+
+#Positional Arguments
+name_please('Aditya',':D')
+
+#Keyword arguments (but its a bad practice you can use but still follow the order)
+name_please(emoji=':D', name='Aditya')
+
+#Default parameters, calling
+name_please()
+
+#function should do one thing really well and it should return something
+
+def math(num1,num2)
+    def in_math(n1,n2)
+        return(n1+n2)
+    return in_math(num1,num2)
+
+print(math(10,20))
+
+
+#Methods (They are owned by the objects, its called on an object)
+'Hello'.something
+
+#DocString (for documentation of function, to add comments into the function )
+'''
+This function test and print something
+'''
+#clean_code (Since Expression will return true or false)
+def is_even(num):
+    return num % 2 == 0
+
+print (is_even(50))
+
+>>True
+
+
+#*args , **kwargs
+#Rule - params, *args, default parameters, **kwargs
+
+**kwargs returns values in form of dictionary, and *args in tuple
+
+def super_func(name, *args, i='hi', **kwargs):
+   total=0
+   for items in kwargs.values():
+   total+=items
+   return sum(args) + total
+print(super_func('Andy',1,2,3,4,5,num1=5,num2=10))
+
+#Scope means who have access to who
+
+#if you define a variable in a function it has only functional scope, cant be accessed outside the function
+# global variables has access from anywhere
+
+# Error Handling -
+

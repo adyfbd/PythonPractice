@@ -1,0 +1,24 @@
+# A Class is like an object constructor, or a "blueprint" for creating object
+# Objects can also contain methods. Methods in objects are functions that belong to the object. Every Object has
+a different address in heap memory
+# Constructor allocates size to the object
+
+# Class has attributes as (Variables) and behaviour as methods(Functions)
+
+self
+
+The word 'self' is used to represent the instance of a class. By using the "self" we access the attributes and
+methods of the class in python.
+__init__ method
+
+"__init__" is a reserved method in python classes. It is called as a constructor in object oriented terminology.
+This method is called when an object is created from a class and it allows the class to initialize the attributes of
+the class.
+
+@classmethod and @statiscmethod
+
+classmethod -  , you can use this and attributes inside the __init__ method without creating an object of the class
+
+staticmethod - you dont need anything like 'cls' as class method you can use it directly
+
+PRIVATE variables or methods, use self._car=car >>> use underscore so no one changes it

@@ -1,0 +1,93 @@
+Commands:
+input() - take input in python
+hi=input()
+print( "name" +hi)
+print(type(6))
+2//3 --divide and  gives an integer
+2**3 - 2 ^ 3
+5 % 4 - Remainder
+
+len() #count length of a string
+
+#math functions
+round(number,digits)
+abs(-20)  -- no negative numbers
+complex -- complex number
+
+print(bin(5)) -- Binary of 5
+print(int('0b101',2)) -- Base 2 to integer
+
+a,b,c = 1,2,3
+print(a)
+print(b)
+print(c)
+
+#for paragraphs string
+long_string = '''hel
+WOW
+^^
+'''
+print(long_string)
+
+#type conversion
+
+hi= type(int(str(100))) -- str to int
+
+print(hi)
+
+#Escape Sequence (\t adds a tab, \n - new line )
+weather = "It's Sunny" OR weather = 'It\'s Sunny'
+
+#Formatted Strings
+name='Aditya'
+age=20
+print(f'Hi {name}. You are {age} years old.') #python 3 feature
+
+#Strings index
+string='me me me'
+        01234567 --index
+       -7  -  -1
+print(string[start index number:end index number:stepover(gap between index)]) #slicing
+print(string[::-1(stepover by 1)]) #reverse string
+
+#immutability
+#error as strings are immutable means you cannot reassign/change value of a string once created
+
+number= '01234567' #Error
+number[0] = '10'
+print(number)
+
+#Built in methods
+
+quote='to be or not to be'
+print(quote.upper())
+>> TO BE OR NOT TO BE
+
+capitalize()  #captialize first word
+
+str1 = 'hello world'
+str2 = str1.replace('hel','new')
+print(str2)
+
+#Booleans
+
+name = 'Aditya'
+is_cool = FALSE #0 is FALSE in python
+is_cool = TRUE # 1 is TRUE in python
+
+print(bool(0))
+>>FALSE
+
+is_magician=False
+is_expert=True
+
+if is_magician and is_expert:
+    print("You are cool")
+elif is_magician and not is_expert
+    print("atleast you are getting there")
+elif not is_magician
+    print("you need super powers")
+
+
+
+
