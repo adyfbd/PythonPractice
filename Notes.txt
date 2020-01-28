@@ -396,5 +396,41 @@ print(super_func('Andy',1,2,3,4,5,num1=5,num2=10))
 #if you define a variable in a function it has only functional scope, cant be accessed outside the function
 # global variables has access from anywhere
 
-# Error Handling -
+# Error Handling
+
+# pip -V >> version of pip
+# pip3 install --upgrade pip
+# pip3 install 'package name'
+# pip3 list
+# pip3 uninstall
+# pip3 install pyjokes==8.8.8
+
+# Debugging >> linting, use of IDE, Read Errors, PDB
+
+import pdb
+pdb.set_trace()
+
+# File IO
+
+my_file = open('hello_world.txt')
+print(my_file.read())
+my_file.seek(0) // to move the cursor to read the file multiple times
+print(my_file.read())
+my_file.seek(0)
+
+my_file.readline()
+my_file.readlines()
+my_file.close() ////you dont need it if you use
+
+>> with open('hello_world.txt', mode='r') as my_file //mode read
+    print(my_file.readline())
+
+ modes:
+ r =  read
+ r+ = read and write
+ w =  write
+ a = append
+
+>>pathlib - path for file in python
+
 

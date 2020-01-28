@@ -396,10 +396,6 @@ print(sum(1, '2')
 # for own error use
 # raise ValueError('hey, custom error raised')
 
-
-"""
-
-
 # Code 15
 # Python generators are a simple way of creating iterators
 # Generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
@@ -417,4 +413,56 @@ obj1 = generator_function(1000)
 print(next(obj1))
 print(next(obj1))
 print(next(obj1))
+
+
+
+# Code16
+# Modules in python
+
+# Organizing code, importing methods from other files in python, the files in python are modules
+# A Package is a folder that contains modules, package is a folder and modules are files in that are in the package
+
+# import filename
+# import package-name.filename
+# from filename import 'function1 name','functions2name'
+# from package.subpackage import filename
+# from package.subpackage.filename import 'functions'
+# if __name__=='__main__':  >>  __name__ is the file(module) name, but file which import everything is __main__ file
+    do this
+
+
+# Code 16
+# Random game
+
+# Check if the number is a right guess , Otherwise
+# Ask again
+
+from random import randint
+import sys
+
+# Generate a number from 1-10
+answer = randint(int(sys.argv[1]),int(sys.argv [2]))
+
+while True:
+    try:
+        # Input from User
+        guess = int(input('Guess a number from 1~10:   '))
+
+        # Check that input is a number 1-10
+
+        if 0 < guess < 11:
+            if guess == answer:
+                print('You guessed it right')
+                break
+        else:
+            print('I told you to enter between 1~10')
+
+    except (ValueError):
+        print('Enter a number')
+        continue
+
+"""
+# Code 17
+# Translator
+
 

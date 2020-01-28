@@ -7,6 +7,12 @@ a different address in heap memory
 
 self
 
+None - when the function dont return anything we get None in output
+
+class object attribute vs class attribute = class object attribute is not changed (same for all methods in class),
+class attribute can change
+Ex: inside __init__ , we have self.car=car, which is a class attribute
+
 The word 'self' is used to represent the instance of a class. By using the "self" we access the attributes and
 methods of the class in python.
 __init__ method
@@ -17,7 +23,7 @@ the class.
 
 @classmethod and @statiscmethod
 
-classmethod -  , you can use this and attributes inside the __init__ method without creating an object of the class
+classmethod -  , you can use this and attributes in method without creating an object of the class
 
 staticmethod - you dont need anything like 'cls' as class method you can use it directly
 
