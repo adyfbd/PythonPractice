@@ -21,4 +21,4 @@ Create branch:
 3. git checkout "branch name" (To switch to the branch)
 4. git diff (Any changes we made)
 
-4. switch to branch then , use git merge master ""merge whatever was in branch into master branch""
+4. switch to branch then , use git merge master ""merge whatever was in master into created branch""

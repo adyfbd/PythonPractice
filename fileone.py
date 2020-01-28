@@ -464,5 +464,19 @@ while True:
 """
 # Code 17
 # Translator
+from translate import Translator
 
+translator = Translator(to_lang='es')
 
+try:
+    with open('translate.txt', mode='r') as file_name:
+        my_file = file_name.read()
+        translation = translator.translate(my_file)
+        with open('translated.txt', mode='w') as my_file2:
+            my_file2.write(translation)
+
+except FileNotFoundError as e:
+    print("Check your file-path")
+
+else:
+    print('Thanks for reading')
